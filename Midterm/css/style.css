@@ -1,0 +1,172 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    width: 100%;
+    background-color: black;
+}
+
+header h1, header nav, header ul {
+    display: inline-block;
+}
+
+
+.logo {
+    position: relative; }
+
+.logo img{
+    width: 200px;
+    height: auto;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 220px;
+    position: relative;
+   
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 20px;
+  letter-spacing: 35px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+    width: 200px;
+    height: auto;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+}
+
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+    color: #F6CDFA;
+}
+
+.button:hover span {
+  padding-right: 25px;
+    color: #3adbff;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+/* .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 30px;
+    padding: 0px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+ 
+}
+
+.button span:after {
+  content: '>';
+   position: relative;
+  opacity: 0;
+  top: 0;
+  right: 30px;
+  transition: 0.5s;
+       color: #F6CDFA;
+}
+
+.button:hover span {
+  padding-right: 25px;
+    color: #3adbff;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+*/
+
+
+nav.top-nav ul li {
+  display: inline;
+}
+
+nav {
+  float: right;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+div.image-container {
+  display: inline-block;
+}
+
+input.burger-checkbox, label.burger {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav.top-nav {
+    display: none;
+  }
+
+  label.burger {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  label.burger:before {
+    content:'\2630';
+  }
+  
+  input.burger-checkbox:checked ~ nav.top-nav {
+    display: block;
+    width: 100%;
+    background-color: grey;
+  }
+}
